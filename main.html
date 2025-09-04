@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KAMAQLABS | Dedalus - IoT para Hoteles</title>
+  <meta name="description" content="Dedalus de KAMAQLABS: Plataforma IoT para hoteles con monitoreo en tiempo real, automatización y analítica. Web y app móvil." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <i class="fa-solid fa-hexagon brand-accent"></i>
+        <span>KAMAQ<span class="brand-accent">LABS</span></span>
+        <span class="badge rounded-pill ms-2 badge-beta">Dedalus</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#miembros">Miembros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+        </ul>
+        <div class="d-flex ms-lg-3 gap-2">
+          <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-paper-plane me-2"></i>Solicitar demo</a>
+          <a href="#app" class="btn btn-outline-primary"><i class="fa-solid fa-mobile-screen-button me-2"></i>Descargar app</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero py-5 py-lg-6">
+    <div class="blob"></div>
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="badge text-bg-light border px-3 py-2 mb-3"><i class="fa-solid fa-signal-stream me-2 text-primary"></i>IoT para hoteles en tiempo real</span>
+          <h1 class="hero-title display-5 mb-3">Dedalus: Gestión hotelera con IoT, web y app móvil</h1>
+          <p class="lead text-secondary mb-4">Monitorea ambientes, automatiza procesos y mejora la experiencia de tus huéspedes con datos en tiempo real y analítica accionable.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a href="#contacto" class="btn btn-primary btn-lg"><i class="fa-solid fa-rocket me-2"></i>Probar ahora</a>
+            <a href="#proyecto" class="btn btn-outline-secondary btn-lg"><i class="fa-solid fa-circle-info me-2"></i>Conocer más</a>
+          </div>
+          <div class="d-flex flex-column gap-2 small text-muted">
+            <div class="check"><i class="fa-solid fa-check me-2"></i>Dashboard unificado con métricas clave</div>
+            <div class="check"><i class="fa-solid fa-check me-2"></i>Alertas y automatización de acciones</div>
+            <div class="check"><i class="fa-solid fa-check me-2"></i>Integración con app móvil para staff</div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="card border-0 shadow-lg overflow-hidden">
+            <div class="row g-0">
+              <div class="col-7 p-4">
+                <h5 class="fw-semibold mb-3"><i class="fa-solid fa-house-signal me-2 text-primary"></i>Panel Dedalus</h5>
+                <ul class="list-unstyled small text-muted mb-0">
+                  <li class="mb-2"><i class="fa-solid fa-temperature-half text-danger me-2"></i>Temperatura & Humedad</li>
+                  <li class="mb-2"><i class="fa-solid fa-wind text-info me-2"></i>Calidad del aire</li>
+                  <li class="mb-2"><i class="fa-solid fa-bolt text-warning me-2"></i>Consumo energético</li>
+                  <li><i class="fa-solid fa-bell text-success me-2"></i>Alertas inteligentes</li>
+                </ul>
+              </div>
+              <div class="col-5 bg-light d-flex align-items-end justify-content-center">
+                <img src="https://images.unsplash.com/photo-1557683311-eac922347aa1?q=80&w=800&auto=format&fit=crop" alt="Dedalus dashboard" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto / Features -->
+  <section id="proyecto" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-4" data-aos="fade-up">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">¿Qué es <span class="brand-accent">Dedalus</span>?</h2>
+          <p class="text-muted">Una plataforma integral de KAMAQLABS para digitalizar operaciones hoteleras mediante dispositivos IoT, con visualización en web, app móvil y automatización.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon mb-3"><i class="fa-solid fa-microchip"></i></div>
+              <h5 class="card-title">Sensores conectados</h5>
+              <p class="card-text text-muted">Lecturas de temperatura, humedad, CO₂, presencia, puertas y más.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon mb-3"><i class="fa-solid fa-chart-line"></i></div>
+              <h5 class="card-title">Dashboard en tiempo real</h5>
+              <p class="card-text text-muted">Indicadores clave para mantenimiento, housekeeping y gerencia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon mb-3"><i class="fa-solid fa-robot"></i></div>
+              <h5 class="card-title">Automatización</h5>
+              <p class="card-text text-muted">Reglas para HVAC, iluminación y ahorro energético basadas en ocupación.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon mb-3"><i class="fa-solid fa-mobile-screen"></i></div>
+              <h5 class="card-title">App móvil</h5>
+              <p class="card-text text-muted">Alertas al staff, tickets de mantenimiento y escaneo de activos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Miembros del grupo -->
+  <section id="miembros" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-4" data-aos="fade-up">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Miembros del grupo</h2>
+          <p class="text-muted">Equipo multidisciplinario detrás de KAMAQLABS y el proyecto Dedalus.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="card member-card h-100 border-0 shadow-sm text-center">
+            <img src="https://i.pravatar.cc/600?img=12" class="card-img-top" alt="Miembro 1" height="220">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-1">Nombre Apellido</h6>
+              <div class="small text-muted mb-2">Líder de Proyecto</div>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card member-card h-100 border-0 shadow-sm text-center">
+            <img src="https://i.pravatar.cc/600?img=32" class="card-img-top" alt="Miembro 2" height="220">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-1">Nombre Apellido</h6>
+              <div class="small text-muted mb-2">IoT Engineer</div>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card member-card h-100 border-0 shadow-sm text-center">
+            <img src="https://i.pravatar.cc/600?img=5" class="card-img-top" alt="Miembro 3" height="220">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-1">Nombre Apellido</h6>
+              <div class="small text-muted mb-2">Backend Developer</div>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card member-card h-100 border-0 shadow-sm text-center">
+            <img src="https://i.pravatar.cc/600?img=47" class="card-img-top" alt="Miembro 4" height="220">
+            <div class="card-body">
+              <h6 class="fw-semibold mb-1">Nombre Apellido</h6>
+              <div class="small text-muted mb-2">UX/UI Designer</div>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contáctanos -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5" data-aos="fade-right">
+          <h2 class="fw-bold mb-3">Contáctanos</h2>
+          <p class="text-muted">Conversemos sobre cómo Dedalus puede optimizar la operación de tu hotel.</p>
+          <div class="d-flex flex-column gap-3 small">
+            <div><i class="fa-solid fa-envelope text-primary me-2"></i><a href="mailto:info@kamaqlabs.com">info@kamaqlabs.com</a></div>
+            <div><i class="fa-solid fa-phone text-primary me-2"></i><a href="tel:+51999999999">+51 999 999 999</a></div>
+            <div><i class="fa-solid fa-location-dot text-primary me-2"></i>Lima, Perú</div>
+          </div>
+          <div class="mt-4 d-flex gap-3">
+            <a class="text-secondary" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a class="text-secondary" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            <a class="text-secondary" href="#" aria-label="GitHub"><i class="fa-brands fa-github fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" required />
+                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Correo</label>
+                    <input type="email" class="form-control" name="correo" required />
+                    <div class="invalid-feedback">Ingresa un correo válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Empresa</label>
+                    <input type="text" class="form-control" name="empresa" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" name="telefono" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="4" name="mensaje" required></textarea>
+                    <div class="invalid-feedback">Cuéntanos sobre tu proyecto.</div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-between align-items-center mt-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="consent" required>
+                      <label class="form-check-label small" for="consent">Acepto la política de privacidad.</label>
+                      <div class="invalid-feedback">Requerido</div>
+                    </div>
+                    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top bg-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="small">© 2025 KAMAQLABS. Todos los derechos reservados.</div>
+      <div class="small text-muted">Hecho con <i class="fa-solid fa-heart text-danger"></i> para el proyecto Dedalus.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+
+    // Bootstrap validation + simple success toast
+    (function () {
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          e.stopPropagation();
+          form.classList.add('was-validated');
+          return;
+        }
+        // Demo: show a toast-like alert; here you could POST to your API
+        const alert = document.createElement('div');
+        alert.className = 'alert alert-success mt-3';
+        alert.role = 'alert';
+        alert.innerHTML = '<i class="fa-solid fa-circle-check me-2"></i>Gracias, te contactaremos pronto.';
+        form.reset();
+        form.classList.remove('was-validated');
+        form.parentElement.appendChild(alert);
+        setTimeout(() => alert.remove(), 4000);
+      });
+    })();
+  </script>
+</body>
+</html>
