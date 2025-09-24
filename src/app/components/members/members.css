@@ -1,0 +1,141 @@
+
+.members-section {
+  width: 100vw;
+  padding: 64px 0 0 0;
+  background: #f5f1e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.members-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.members-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.members-desc {
+  color: #6b5d47;
+  font-size: 1.18rem;
+  margin-bottom: 0;
+}
+.members-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.member-card {
+  background: #f8f5ed !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(74,93,65,0.08) !important;
+  padding: 0 0 24px 0 !important;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.member-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.member-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.member-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #222;
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.member-info {
+  padding: 24px 18px 0 18px;
+  text-align: center;
+}
+.member-name {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.member-role {
+  color: #6b5d47;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+.member-social {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.member-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: none;
+  transition: background 0.2s;
+}
+.member-social a:hover {
+  background: #e5e3da;
+}
+.mat-icon {
+  font-size: 1.3em;
+}
+@media (max-width: 1100px) {
+  .members-list {
+    gap: 18px;
+  }
+  .member-card {
+    min-width: 220px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .members-section {
+    padding: 32px 0 0 0;
+  }
+  .members-title {
+    font-size: 1.5rem;
+  }
+  .members-list {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .member-card {
+    min-width: 180px;
+  }
+}
