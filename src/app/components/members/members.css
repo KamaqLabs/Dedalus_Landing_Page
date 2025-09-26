@@ -1,7 +1,7 @@
 
 .members-section {
   width: 100vw;
-  padding: 64px 0 0 0;
+  padding: 64px 0 64px 0;
   background: #f5f1e8;
   display: flex;
   flex-direction: column;
@@ -23,14 +23,21 @@
   margin-bottom: 0;
 }
 .members-list {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.members-row {
   display: flex;
   gap: 32px;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1700px;
-  margin: 0 auto;
+}
+.members-row--center {
+  justify-content: center;
 }
 .member-card {
   background: #f8f5ed !important;
@@ -118,6 +125,9 @@
   .members-list {
     gap: 18px;
   }
+  .members-row {
+    gap: 18px;
+  }
   .member-card {
     min-width: 220px;
     max-width: 100%;
@@ -131,6 +141,9 @@
     font-size: 1.5rem;
   }
   .members-list {
+    gap: 12px;
+  }
+  .members-row {
     flex-direction: column;
     gap: 12px;
     align-items: center;

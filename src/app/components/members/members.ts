@@ -36,24 +36,24 @@ export class MembersComponent {
     },
     {
       img: 'assets/gabriel_profile.png',
-      name: 'Gabriel',
+      name: 'Gabriel Braithuaite',
       role: 'Backend Developer',
       linkedin: '#',
-      github: '#'
+      github: 'https://github.com/Gaboo04'
     },
     {
       img: 'assets/sihuar_profile.jpg',
-      name: 'Sihuar',
+      name: 'Sihuar Ccotarma',
       role: 'UX/UI Designer',
-      linkedin: '#',
-      github: '#'
+      linkedin: 'https://www.linkedin.com/in/sihuar-ccotarma/',
+      github: 'https://github.com/Anx0123'
     },
     {
       img: 'assets/valentino_profile.jpg',
-      name: 'Valentino',
+      name: 'Valentino Cervantes',
       role: 'Otro rol',
-      linkedin: '#',
-      github: '#'
+      linkedin: 'https://www.linkedin.com/in/valentino-sebastian-cervantes-erequita',
+      github: 'https://github.com/KiwiAmenazante'
     }
   ];
 }
