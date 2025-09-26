@@ -20,7 +20,21 @@
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 12px;
+}
+.navbar-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(74,93,65,0.10);
+  background: #fff;
+  border: 2px solid #ede7d6;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.navbar-logo-img:hover {
+  box-shadow: 0 4px 16px rgba(74,93,65,0.18);
+  transform: scale(1.07);
 }
 .logo-bold {
   color: #111;
