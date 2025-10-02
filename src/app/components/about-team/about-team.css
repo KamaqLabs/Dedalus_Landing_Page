@@ -1,0 +1,17 @@
+.about-team-section {
+  padding: 64px 0;
+  background: #f8f5ed;
+  text-align: center;
+}
+.about-team-section h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+.about-team-section p {
+  color: #6b5d47;
+  font-size: 1.18rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
