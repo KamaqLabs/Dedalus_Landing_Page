@@ -15,3 +15,12 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+
+/* src/app/components/about-product/about-product.component.css */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
