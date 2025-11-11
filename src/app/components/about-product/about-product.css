@@ -16,11 +16,18 @@
   margin: 0 auto;
 }
 
-
-/* src/app/components/about-product/about-product.component.css */
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+@media (max-width: 700px) {
+  .about-product-section {
+    padding: 24px 0;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .about-product-section h2 {
+    font-size: 1.3rem;
+  }
+  .about-product-section p {
+    font-size: 1rem;
+    max-width: 100%;
+    word-break: break-word;
+  }
 }

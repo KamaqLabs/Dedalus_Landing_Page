@@ -7,14 +7,30 @@
     </span>
     <span class="navbar-badge">IoT</span>
   </div>
-  <div class="navbar-center">
-  <a class="navbar-link" href="#proyecto">Proyecto</a>
-  <a class="navbar-link" href="#about-product">Nosotros</a>
-  <a class="navbar-link" href="#pricing">Planes</a>
-  <a class="navbar-link" href="#miembros">Miembros</a>
-  <a class="navbar-link" href="#contacto">Contáctanos</a>
+  <button class="navbar-toggle" aria-label="Abrir menú" (click)="showMenu = !showMenu">
+    <mat-icon>{{ showMenu ? 'close' : 'menu' }}</mat-icon>
+  </button>
+  <div class="navbar-center desktop-only">
+    <a class="navbar-link" href="#proyecto">Proyecto</a>
+    <a class="navbar-link" href="#about-product">Nosotros</a>
+    <a class="navbar-link" href="#pricing">Planes</a>
+    <a class="navbar-link" href="#miembros">Miembros</a>
+    <a class="navbar-link" href="#contacto">Contáctanos</a>
   </div>
-  <div class="navbar-right">
+  <div class="navbar-right desktop-only">
+    <button mat-raised-button color="primary" class="navbar-btn">
+      <mat-icon>send</mat-icon> Solicitar demo
+    </button>
+    <button mat-stroked-button color="primary" class="navbar-btn">
+      <mat-icon>smartphone</mat-icon> Descargar app
+    </button>
+  </div>
+  <div class="navbar-menu" [class.open]="showMenu">
+    <a class="navbar-link" href="#proyecto">Proyecto</a>
+    <a class="navbar-link" href="#about-product">Nosotros</a>
+    <a class="navbar-link" href="#pricing">Planes</a>
+    <a class="navbar-link" href="#miembros">Miembros</a>
+    <a class="navbar-link" href="#contacto">Contáctanos</a>
     <button mat-raised-button color="primary" class="navbar-btn">
       <mat-icon>send</mat-icon> Solicitar demo
     </button>

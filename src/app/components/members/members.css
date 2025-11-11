@@ -150,5 +150,10 @@
   }
   .member-card {
     min-width: 180px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 4px 16px 4px !important;
   }
 }
+

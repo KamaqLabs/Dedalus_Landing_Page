@@ -10,4 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule, MatIconModule]
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  showMenu = false;
+}

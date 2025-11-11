@@ -19,3 +19,33 @@ body {
 	background: #f5f1e8;
 }
 /* You can add global styles to this file, and also import other style files */
+
+/* Responsive global styles */
+@media (max-width: 900px) {
+	html, body {
+		font-size: 15px;
+	}
+	h1, h2, h3 {
+		font-size: 1.2em;
+	}
+	section {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media (max-width: 700px) {
+	html, body {
+		font-size: 14px;
+	}
+	h1, h2, h3 {
+		font-size: 1em;
+	}
+	section {
+		padding: 18px 0 !important;
+	}
+	.mat-toolbar {
+		min-height: 56px !important;
+		padding: 0 8px !important;
+	}
+}
