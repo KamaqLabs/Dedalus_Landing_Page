@@ -1,7 +1,10 @@
 .about-product-section {
-  padding: 64px 0;
+  padding: 0;
   background: #f5f1e8;
   text-align: center;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 .about-product-section h2 {
   font-size: 2.2rem;

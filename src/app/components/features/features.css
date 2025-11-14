@@ -1,11 +1,12 @@
 
 .features-section {
   width: 100vw;
-  padding: 64px 0 0 0;
+  padding: 0;
   background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 .features-header {
   text-align: center;
@@ -93,6 +94,10 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
   }
   .feature-card {
     min-width: 180px;
@@ -103,6 +108,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    overflow-x: hidden !important;
   }
 }
 
