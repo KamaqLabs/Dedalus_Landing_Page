@@ -12,4 +12,19 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class NavbarComponent {
   showMenu = false;
+
+  downloadApp(): void {
+    const fileUrl = 'assets/files/Imagen.png'; // cámbialo luego por tu APK
+    const fileName = 'Imagen.png';             // o app-release.apk
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.style.display = 'none';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
 }
